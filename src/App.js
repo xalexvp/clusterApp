@@ -8,7 +8,7 @@ import 'mapbox-gl-compare/dist/mapbox-gl-compare.css';
 // extend mapboxgl, adding the Compare class
 mapboxgl.Compare = mapboxglCompare;
 
-const MapboxExample = () => {
+const App = () => {
     const mapRef = useRef();
     const beforeMapContainerRef = useRef();
     const afterMapContainerRef = useRef();
@@ -67,4 +67,4 @@ const MapboxExample = () => {
     );
 };
 
-export default MapboxExample;
+export default App;
