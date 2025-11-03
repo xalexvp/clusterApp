@@ -8,6 +8,12 @@ import 'mapbox-gl-compare/dist/mapbox-gl-compare.css';
 // extend mapboxgl, adding the Compare class
 mapboxgl.Compare = mapboxglCompare;
 
+const mapConfig = {
+    style: 'mapbox://styles/mapbox/standard',
+    center: [33, 50],
+    zoom: 5
+}
+
 const App = () => {
     const mapRef = useRef();
     const beforeMapContainerRef = useRef();
@@ -15,6 +21,8 @@ const App = () => {
     const comparisonContainerRef = useRef();
 
     const mapStyle = { position: 'absolute', top: 0, bottom: 0, width: '100%' };
+
+    const {style, center, zoom} = mapConfig;
 
     useEffect(() => {
         // some development servers will run this hook more than once
@@ -25,27 +33,27 @@ const App = () => {
 
         const beforeMap = new mapboxgl.Map({
             container: beforeMapContainerRef.current,
-            style: 'mapbox://styles/mapbox/standard',
+            style,
             config: {
                 basemap: {
                     theme: 'monochrome'
                 }
             },
-            center: [0, 0],
-            zoom: 5
+            center,
+            zoom
         });
 
         const afterMap = new mapboxgl.Map({
             container: afterMapContainerRef.current,
-            style: 'mapbox://styles/mapbox/standard',
+            style,
             config: {
                 basemap: {
                     theme: 'monochrome',
                     lightPreset: 'night'
                 }
             },
-            center: [0, 0],
-            zoom: 5
+            center,
+            zoom
         });
 
         mapRef.current = new mapboxgl.Compare(
@@ -53,7 +61,7 @@ const App = () => {
             afterMap,
             comparisonContainerRef.current
         );
-    }, []);
+    }, [style, center, zoom]);
 
     return (
         <div
