@@ -40,7 +40,7 @@ def generate_geojson(num_points):
     return feature_collection
 
 # Кількість точок для генерації (можна змінити на 100000, якщо потрібно більше)
-NUM_POINTS_TO_GENERATE = 15000
+NUM_POINTS_TO_GENERATE = 150000
 
 # Генеруємо дані
 geojson_data = generate_geojson(NUM_POINTS_TO_GENERATE)

@@ -5,7 +5,7 @@ import mapboxglCompare from 'mapbox-gl-compare';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'mapbox-gl-compare/dist/mapbox-gl-compare.css';
 
-import bigGeoJSON from '../../constants/large_deposits.geojson';
+import bigGeoJSON from '../../constants/datasets/150000.geojson';
 import {
     clusteredPointCfg,
     clusteredPointsNumbersCfg,
