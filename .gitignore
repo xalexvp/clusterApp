@@ -22,4 +22,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/.idea
+/src/constants/datasets/1000000.geojson
+/src/constants/datasets/1500000.geojson
+/.idea/

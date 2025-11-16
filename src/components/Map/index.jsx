@@ -5,6 +5,8 @@ import mapboxglCompare from 'mapbox-gl-compare';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'mapbox-gl-compare/dist/mapbox-gl-compare.css';
 
+// import bigGeoJSON from '../../constants/datasets/1500000.geojson';
+// import bigGeoJSON from '../../constants/datasets/1000000.geojson';
 // import bigGeoJSON from '../../constants/datasets/150000.geojson';
 import bigGeoJSON from '../../constants/datasets/15000.geojson';
 import {
