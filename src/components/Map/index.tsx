@@ -12,9 +12,9 @@ import {
 } from '../../constants/config';
 // import bigGeoJSON from '../../constants/datasets/1500000.geojson';
 // import bigGeoJSON from '../../constants/datasets/1000000.geojson';
-// import bigGeoJSON from '../../constants/datasets/150000.geojson';
 // @ts-ignore
-import bigGeoJSON from '../../constants/datasets/15000.geojson';
+import bigGeoJSON from '../../constants/datasets/150000.geojson';
+// import bigGeoJSON from '../../constants/datasets/15000.geojson';
 import { mapStyle } from './styles';
 
 import 'mapbox-gl/dist/mapbox-gl.css';

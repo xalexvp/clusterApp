@@ -24,4 +24,6 @@ yarn-debug.log*
 yarn-error.log*
 /src/constants/datasets/1000000.geojson
 /src/constants/datasets/1500000.geojson
+.idea/
+.idea/workspace.xml
 /.idea/

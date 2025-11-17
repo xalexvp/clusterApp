@@ -47,9 +47,9 @@ geojson_data = generate_geojson(NUM_POINTS_TO_GENERATE)
 
 # Записуємо дані у файл
 try:
-    with open("large_deposits.geojson", "w", encoding="utf-8") as f:
+    with open(f"{NUM_POINTS_TO_GENERATE}.geojson", "w", encoding="utf-8") as f:
         json.dump(geojson_data, f, ensure_ascii=False, indent=2)
-    print(f"Згенеровано {NUM_POINTS_TO_GENERATE} точок у файл large_deposits.geojson")
+    print(f"Згенеровано {NUM_POINTS_TO_GENERATE} точок у файл {NUM_POINTS_TO_GENERATE}.geojson")
 except IOError as e:
     print(f"Помилка при записі файлу: {e}")
     sys.exit(1)
